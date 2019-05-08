@@ -1,0 +1,11 @@
+[package]
+name = "rust-vpn-reconnect"
+version = "0.1.0"
+authors = ["Mariusz Kryński <mrk@sed.pl>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+dbus = "0.6.4"
