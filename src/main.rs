@@ -119,7 +119,7 @@ fn reconnect_vpn_loop(config: &Config) -> Result<(), Box<Error>> {
 fn main() -> Result<(), Box<Error>> {
     let config: Config = {
         let config_path = &format!("{home}/.config/rust-vpn-reconnect/rust-vpn-reconnect.yml", home=env::var("HOME")?);
-        let config_file = File::open(Path::new(config_path)).map_err(|err| {
+        let config_file = File::open(Path::new(config_path)).map_err(|_| {
             std::io::Error::new(
                 std::io::ErrorKind::Other,
                 format!("config file not found at {}", config_path)
