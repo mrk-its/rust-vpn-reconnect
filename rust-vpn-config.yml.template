@@ -1,0 +1,10 @@
+# copy it to $HOME/.config/rust-vpn-reconnect/rust-vpn-reconnect.yml
+log_level: INFO
+reconnect_delay: 2
+vpn:
+  work-vpn:
+    connections:
+      - work-wifi
+  home-vpn:
+    connections:
+      - home-wifi
